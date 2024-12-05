@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #acaae9;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: #bee2ef;
+            border: 1px solid #f0b1b7;
+            border-radius: 8px;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card a {
+            text-decoration: none;
+            color: #9c1ff6;
+            font-weight: bold;
+        }
+        .card a:hover {
+            color: #45625f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <div class="container">
+        <div class="card">
+            <h3>Borrow Books</h3>
+            <p><a href="/api/user/borrow_request">Request to Borrow a Book</a></p>
+        </div>
+        <div class="card">
+            <h3>Create User</h3>
+            <p><a href="/api/admin/create_user">Create a New User</a></p>
+        </div>
+        <div class="card">
+            <h3>View Borrow Requests</h3>
+            <p><a href="/api/admin/borrow_requests">View All Borrow Requests</a></p>
+        </div>
+        <div class="card">
+            <h3>Approve/Deny Borrow Request</h3>
+            <p><a href="/api/admin/borrow_request/{id}">Approve/Deny Borrow Request</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Book List</h3>
+            <p><a href="/api/user/books">Book List</a></p>
+        </div>
+    </div>
+</body>
+</html>
