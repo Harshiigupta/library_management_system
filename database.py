@@ -1,3 +1,20 @@
+
+from flask_sqlalchemy import SQLAlchemy
+
+# Initialize db object
+db = SQLAlchemy()
+
+def init_db():
+    # We don't need to call this in the main app file anymore. This is handled inside create_app.
+    pass
+
+
+
+
+
+
+
+
 # from app import db
 # from models import User, Book
 
@@ -36,12 +53,3 @@
 
 # # Call this to initialize the DB
 # init_db()
-from flask_sqlalchemy import SQLAlchemy
-
-# Initialize db object
-db = SQLAlchemy()
-
-def init_db():
-    # We don't need to call this in the main app file anymore. This is handled inside create_app.
-    pass
-
